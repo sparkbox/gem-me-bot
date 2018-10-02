@@ -1,0 +1,28 @@
+{
+  "name": "gem-me-bot",
+  "scripts": {},
+  "env": {
+    "LANG": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    },
+    "TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
