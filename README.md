@@ -1,7 +1,11 @@
+# Deprecation Warning
+
+This repository was deprecated on March 15, 2021 in favor of the new [Reaction Bot][reaction-bot] that handles reacting to messages.
+
 # gem-me-bot
 A slack bot, looking for #gems
 
-This project uses the https://github.com/smallwins/slack library for slack RTM in node. 
+This project uses the https://github.com/smallwins/slack library for slack RTM in node.
 
 ## Install
 
@@ -12,9 +16,9 @@ clone or download, in the unpacked directory, run: `npm install`
 Create a `.env` file with your slack token.
 
     SLACK_TOKEN=YOUR_SLACK_TOKEN
-    
-Change your "gem" channel to the name of your `gems`. (e.g. `#gems`). 
-    
+
+Change your "gem" channel to the name of your `gems`. (e.g. `#gems`).
+
 ## Run
 
 `npm run start` or `babel-node lib/bot.js`
@@ -28,3 +32,5 @@ Change your "gem" channel to the name of your `gems`. (e.g. `#gems`).
 ### Running forever:
 
 `forever node_modules/babel-cli/bin/babel-node.js lib/bot.js`
+
+[reaction-bot]: http://github.com/sparkbox/reaction-bot
